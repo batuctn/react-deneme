@@ -11,14 +11,14 @@ const AlertDialog=({handleClose,show,username,sehir,firma_ismi})=>{
     return       <div>
 
         <Dialog
-            sx={{
-                "& .MuiDialog-paper":{
-                width:"500px",
+                sx={{
+                    "& .MuiDialog-paper":{
+                    width:"500px",
                     justifyContent:"center",
                     alignItems:"center",
                     borderRadius:"50px"
-                }
-            }}
+                                        }
+                }}
             open={show}
             onClose={handleClose}
             aria-labelledby="alert-dialog-title"
