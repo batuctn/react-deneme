@@ -30,9 +30,9 @@ const Tablo = ()=> {
                     <TableRow>
                         <TableCell sx={{background:"aliceblue",borderRadius:"15px"}}>Name</TableCell>
                         <TableCell sx={{background:"aliceblue",borderRadius:"15px"}} align="center">Website</TableCell>
-                        <TableCell sx={{background:"aliceblue",borderRadius:"15px"}}align="center">Phone</TableCell>
-                        <TableCell sx={{background:"aliceblue",borderRadius:"15px"}}align="center">Email</TableCell>
-                        <TableCell sx={{background:"aliceblue",borderRadius:"15px"}}align="center">Details</TableCell>
+                        <TableCell sx={{background:"aliceblue",borderRadius:"15px"}} align="center">Phone</TableCell>
+                        <TableCell sx={{background:"aliceblue",borderRadius:"15px"}} align="center">Email</TableCell>
+                        <TableCell sx={{background:"aliceblue",borderRadius:"15px"}} align="center">Details</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -41,9 +41,7 @@ const Tablo = ()=> {
                             key={item.id}
                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                         >
-                            <TableCell component="th" scope="row">
-                                {item.name}
-                            </TableCell>
+                            <TableCell component="th" scope="row">{item.name}</TableCell>
                             <TableCell align="center">{item.website}</TableCell>
                             <TableCell align="center">{item.phone}</TableCell>
                             <TableCell align="center">{item.email}</TableCell>
